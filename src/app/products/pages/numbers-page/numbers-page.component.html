@@ -1,0 +1,22 @@
+<p-panel header="Pipe Numbers" class="p-2">
+  <p>
+    Pipes on Angular - > common module
+  </p>
+</p-panel>
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="Ventas netas del precente año">
+        {{totalSells +1235 | number:'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas brutas" subheader="Ventas brutas  del precente año">
+        {{totalSells | currency:'COP':'symbol-narrow':'1.6-6'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ganancia Porcentual" subheader="del precente año">
+        {{percent | percent: '1.2-2'}}
+    </p-card>
+  </div>
+</div>
